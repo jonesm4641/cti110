@@ -1,7 +1,9 @@
-# Travel Expense Code
-# 9-20-22
-# CTI-110 P1HW2 - Travel Expense
+# Travel Expense Code Module 4
+# 10-06-22
+# CTI-110 P2HW1 - Travel
 # Marc-Anthony Jones
+
+#The Input is user input for Location, Budget, and other expenses. Then it will be processed with the calculations I have defined, then print output based off the input.
 
 
 print("This program calculates and displays travel expenses")
@@ -35,14 +37,15 @@ FoodCost = float(input('Last, how much do you need for food?: '))
 
 print("----------Travel Expenses""----------")
 
-print("Location: ",Location)
-print("Initial Budget: ",Budget)
-print("Fuel: ",GasExpense)
-print("Accomdation:",HotelCost)
-print("Food: ",FoodCost)
+print(f' Location:           {Location} ')
+print(f' Initial Budget:    ${Budget}')
+print(f' Fuel:              ${GasExpense}')
+print(f' Accomdation:       ${HotelCost}')
+print(f' Food:              ${FoodCost}')
 
 ## Remaining Balance equation us as follows >>> Remaining_Balance = Budget - GasExpense - HotelCost - FoodCost
 
 Remaining_Balance = Budget - GasExpense - HotelCost - FoodCost
 
-print("Remaining Balance: ", Budget - GasExpense - HotelCost - FoodCost)
+print("-----------------------------------")
+print(f' Remaining Balance: ${Remaining_Balance}')
